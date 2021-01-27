@@ -1,0 +1,329 @@
+html, body {
+width: 100%;
+height: 100%;
+margin: 0px;
+padding: 0px;
+}
+
+.sky {
+  height: calc(40%);
+  width: 100%;
+  background: #80d4ff;
+}
+
+.grass {
+  height: calc(60% - 250px);
+  width: 100%;
+  background: #004d26;
+}
+
+.road {
+  height: 240px;
+  width: 100%;
+  background: #262626;
+}
+
+.roadEdge, .roadBottomEdge, .roadMiddle {
+  height: 10px;
+  width: 100%;
+  background: #737373;
+}
+
+.roadEdge {
+  position: relative;
+  top: 0;
+}
+
+.roadMiddle {
+  position: relative;
+  top: calc(50% - 10px);
+  background: #262626;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.roadMiddle div{
+  height: 100%;
+  width:30px;
+  background: white;
+}
+
+.roadBottomEdge {
+  position: relative;
+  top: calc(100% - 20px);
+}
+
+.mario {
+  position:absolute;
+  left: 0;
+  bottom: 160px;
+  z-index: 1;
+  animation: marioRide 10s linear;
+  animation-fill-mode: forwards;
+}
+
+.cloud {
+  position: absolute;
+  right: 500px;
+  top: 15px;
+  z-index: 1;
+  animation: cloudMoves 30s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.luigi {
+
+  position: absolute;
+  left: -300px;
+  bottom: 160px;
+  z-index: 2;
+  animation: luigiMove 4s linear;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes luigiMove {
+
+  from {transform: translateX(-300px);}
+  to {transform: translateX(1400px);}
+}
+
+@keyframes cloudMoves {
+
+  from {transform: translateX(0px);}
+  to {transform: translateX(-600px);}
+
+}
+
+@keyframes marioRide {
+
+  0% {
+    transform: scaleY(0.98);
+    left: 0px;
+    bottom: 155px;
+  }
+  2% {
+    transform: scaleY(1);
+    left: 25px;
+    bottom: 160px;
+  }
+  5% {
+    transform: scaleY(0.98);
+    left: 50px;
+    bottom: 155px;
+  }
+  7% {
+    transform: scaleY(1);
+    left: 75px;
+    bottom: 155px;
+  }
+  10% {
+    transform: scaleY(0.93);
+    left: 100px;
+    bottom: 180px;
+  }
+  12% {
+    transform: scaleY(1);
+    left: 125px;
+    bottom: 185px;
+  }
+  15% {
+    transform: scaleY(0.98);
+    left: 150px;
+    bottom: 180px;
+  }
+
+  17% {
+    transform: scaleY(1);
+    left: 175px;
+    bottom: 180px;
+  }
+
+  20% {
+    transform: scaleY(0.95);
+    left: 200px;
+    bottom: 175px;
+  }
+
+  22% {
+    transform: scaleY(1);
+    left: 225px;
+    bottom: 170px;
+  }
+  25% {
+    transform: scaleY(0.98);
+    left: 250px;
+    bottom: 155px;
+  }
+
+  27% {
+    transform: scaleY(1);
+    left: 275px;
+    bottom: 160px;
+  }
+  30% {
+    transform: scaleY(0.95);
+    left: 300px;
+    bottom: 155px;
+  }
+  32% {
+    transform: scaleY(1);
+    left: 325px;
+    bottom: 160px;
+  }
+  35% {
+    transform: scaleY(0.95);
+    left: 350px;
+    bottom: 155px;
+  }
+  37% {
+    transform: scaleY(1);
+    left: 375px;
+    bottom: 160px;
+  }
+  40% {
+    transform: scaleY(0.95);
+    left: 400px;
+    bottom: 155px;
+  }
+
+  42% {
+    transform: scaleY(1);
+    left: 425px;
+    bottom: 160px;
+  }
+
+  45% {
+    transform: scaleY(0.9);
+    left: 450px;
+    bottom: 155px;
+  }
+
+  47% {
+    transform: scaleY(1);
+    left: 475px;
+    bottom: 160px;
+  }
+
+  50% {
+    transform: scaleY(0.98);
+    left: 500px;
+    bottom: 155px;
+  }
+
+  52% {
+    transform: scaleY(0.98);
+    left: 525px;
+    bottom: 155px;
+  }
+  55% {
+    transform: scaleY(1);
+    left: 550px;
+    bottom: 160px;
+  }
+  57% {
+    transform: scaleY(0.98);
+    left: 575px;
+    bottom: 155px;
+  }
+  60% {
+    transform: scaleY(1);
+    left: 600px;
+    bottom: 160px;
+  }
+  62% {
+    transform: scaleY(0.93);
+    left: 625px;
+    bottom: 155px;
+  }
+  65% {
+    transform: scaleY(1);
+    left: 650px;
+    bottom: 160px;
+  }
+  67% {
+    transform: scaleY(0.98);
+    left: 675px;
+    bottom: 155px;
+  }
+
+  70% {
+    transform: scaleY(1);
+    left: 700px;
+    bottom: 160px;
+  }
+
+  72% {
+    transform: scaleY(0.95);
+    left: 725px;
+    bottom: 155px;
+  }
+
+  75% {
+    transform: scaleY(1);
+    left: 750px;
+    bottom: 160px;
+  }
+  77% {
+    transform: scaleY(0.98);
+    left: 775px;
+    bottom: 155px;
+  }
+
+  80% {
+    transform: scaleY(1);
+    left: 800px;
+    bottom: 160px;
+  }
+  82% {
+    transform: scaleY(0.95);
+    left: 825px;
+    bottom: 155px;
+  }
+  85% {
+    transform: scaleY(1);
+    left: 850px;
+    bottom: 160px;
+  }
+  87% {
+    transform: scaleY(0.95);
+    left: 875px;
+    bottom: 155px;
+  }
+  90% {
+    transform: scaleY(1);
+    left: 900px;
+    bottom: 160px;
+  }
+  92% {
+    transform: scaleY(0.95);
+    left: 925px;
+    bottom: 155px;
+  }
+
+  95% {
+    transform: scaleY(1);
+    left: 950px;
+    bottom: 160px;
+  }
+
+  96% {
+    transform: scaleY(0.9);
+    left: 975px;
+    bottom: 170px;
+  }
+
+  98% {
+    transform: scaleY(1);
+    left: 1000px;
+    bottom: 180px;
+  }
+
+  100% {
+    transform: scaleY(0.98);
+    left: 1025px;
+    bottom: 180px;
+  }
+}
